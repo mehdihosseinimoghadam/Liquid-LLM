@@ -1,5 +1,5 @@
-# Liquid-LLM
-Liquid LLM from scratch
+# Liquid LLM from scratch
+
 
 ![LFM2 Convolution Block](img/1_enfuC8yFwvurDcq-Sx0kpA.webp)
 
