@@ -1,7 +1,7 @@
 # Liquid-LLM
 Liquid LLM from scratch
 
-
+![LFM2 Convolution Block](img/1_enfuC8yFwvurDcq-Sx0kpA.webp)
 
 # LFM2 Architecture Diagrams
 
