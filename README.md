@@ -80,32 +80,6 @@ The LFM2 model represents a hybrid approach combining:
 | 700M       | 1024        | 10          | 6                | 16              | 4        |
 | 1.2B       | 1536        | 10          | 6                | 24              | 6        |
 
-## File Structure
-
-```
-img/
-├── conv.png           # LFM2 Convolution Block diagram
-├── GQA.png           # Grouped Query Attention diagram  
-├── Transformer.png   # LFM2 Transformer Block diagram
-└── LFM2.png          # Complete LFM2 Model diagram
-```
-
-## Usage in Documentation
-
-These diagrams can be referenced in research papers, documentation, or educational materials. Each diagram includes:
-
-- Clear component labeling
-- Tensor shape annotations (B=batch, L=length, H=hidden)
-- Mathematical operations and flow arrows
-- Key architectural insights and benefits
-
-## Related Files
-
-- Implementation code: `../src/`
-- Model configurations: `../configs/`
-- Training scripts: `../scripts/`
-- Documentation: `../docs/`
 
 ---
 
-*Note: These diagrams illustrate the LFM2 architecture as described in the Liquid AI research. The hybrid design enables efficient processing of both local patterns (convolution) and global dependencies (attention).*
