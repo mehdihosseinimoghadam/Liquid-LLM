@@ -68,6 +68,42 @@ This directory contains architectural diagrams for the LFM2 (Liquid Foundation M
 ![LFM2 Convolution Block](img/SwiGLU.jpg)
 
 
+The SiLU + GLU = SwiGLU function is a gated activation function introduced in the PaLM architecture and now widely used in modern large language models (including GPT-4-style architectures). It’s considered one of the best-performing activation functions for deep transformers.
+
+### 🔍 Why is SwiGLU important?
+
+Modern LLMs like PaLM, GPT-3.5-Turbo, GPT-4-variants, LLaMA-2/3 and Mistral use gated activations because they:
+
+✅ Improve training stability
+
+✅ Increase model expressiveness
+
+✅ Offer better gradient flow
+
+✅ Provide higher accuracy for the same number of parameters
+
+SwiGLU is generally superior to ReLU, GELU, and even GLU variants.
+
+
+### 🧠 Why transformer models prefer SwiGLU
+	•	GLU-based activations give a multiplicative interaction between paths
+	•	The SiLU gate is smooth, non-saturating, and has better gradients
+	•	Empirically gives 2–5% improvements on LM benchmarks
+	•	Extremely cheap computationally (just one extra linear projection)
+
+
+### 🧠 In simple terms
+
+SwiGLU =
+👉 “take your linear layer”
+👉 “split output into two halves”
+👉 “use one half as data and the other as a SiLU gate”
+👉 “multiply them together”
+
+It’s like giving each neuron its own smart valve that learns how much information to let through.
+
+
+
 ## Architecture Summary
 
 The LFM2 model represents a hybrid approach combining:
