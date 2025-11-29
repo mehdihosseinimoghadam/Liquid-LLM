@@ -63,6 +63,11 @@ This directory contains architectural diagrams for the LFM2 (Liquid Foundation M
 
 ---
 
+### 5. SwiGLU 
+
+![LFM2 Convolution Block](img/SwiGLU.jpg)
+
+
 ## Architecture Summary
 
 The LFM2 model represents a hybrid approach combining:
